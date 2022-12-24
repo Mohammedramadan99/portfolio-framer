@@ -1,6 +1,8 @@
-'use client'
-import React from 'react'
-import Resume from '../components/screens/Resume';
+
+import dynamic from "next/dynamic";
+const Resume = dynamic(() => import("../components/screens/Resume"), {
+  ssr: false,
+});
 
 function resume() {
   return (

@@ -1,8 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
-// import { Inter } from '@next/font/google'
-import { GetServerSideProps, GetServerSidePropsContext } from 'next'
-import ServiceCard from '../components/ServiceCard'
+import dynamic from 'next/dynamic';
+const ServiceCard = dynamic(() => import("../components/ServiceCard"), {ssr: false});
 import {services} from '../data'
 // const inter = Inter({ subsets: ['latin'] })
 import { routerAnimation, stagger } from "../animations";

@@ -1,10 +1,17 @@
+import dynamic from "next/dynamic";
 import { useState } from "react";
-import ProjectCard from "../components/ProjectCard";
-import ProjectsNavbar from "../components/ProjectsNavbar";
+const ProjectsNavbar = dynamic(() => import("../components/ProjectsNavbar"), {
+  ssr: false,
+});
+const ProjectCard = dynamic(() => import("../components/ProjectCard"), {
+  ssr: false,
+});
+
 import { projects as projectsData } from "../data";
 import { Category } from "../types";
 import { motion } from 'framer-motion'
-import {fadeInUp, routerAnimation, stagger} from '../animations'
+import { fadeInUp, routerAnimation, stagger } from '../animations'
+
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
   const [showDetails,setShowDetails] = useState<number | null>(null)
