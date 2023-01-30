@@ -21,41 +21,7 @@ function Resume() {
       exit="exit"
       className="px-4 py-2 dark:text-white"
     >
-      <div className="grid gap-6 md:grid-cols-2 mx-1">
-        <motion.div
-          variants={fadeInUp}
-          initial="initial"
-          animate="animate"
-          className="dark:bg-dark-200 p-5"
-        >
-          <h5 className="text-xl font-bold capitalize">education</h5>
-          <div>
-            <h5 className="text-md font-bold capitalize">BA</h5>
-            <p className="text-sm font-bold capitalize">Al Azhar University</p>
-            <p>
-              i graduated from faculty of commerce al azhar University ,
-              department of BA with a very good grade
-            </p>
-          </div>
-        </motion.div>
-        {/* Experience */}
-        <motion.div
-          variants={fadeInUp}
-          initial="initial"
-          animate="animate"
-          className="dark:bg-dark-200 p-5"
-        >
-          <h5 className="text-xl font-bold capitalize">experience</h5>
-          <div>
-            <h5 className="text-md font-bold capitalize">BA</h5>
-            <p className="text-sm font-bold capitalize">Al Azhar University</p>
-            <p>
-              i graduated from faculty of commerce al azhar University ,
-              department of BA with a very good grade
-            </p>
-          </div>
-        </motion.div>
-      </div>
+      
       {/* Languages & Technologies */}
       <div className="my-4 grid gap-6 md:grid-cols-2">
         <div>
@@ -78,6 +44,41 @@ function Resume() {
             ))}
           </div>
         </div>
+      </div>
+      <div className="grid gap-6 md:grid-cols-2 mx-1">
+        <motion.div
+          variants={fadeInUp}
+          initial="initial"
+          animate="animate"
+          className="dark:bg-dark-200 p-5"
+        >
+          <h5 className="text-xl font-bold capitalize">education</h5>
+          <div>
+            <h5 className="text-md font-bold capitalize">Business Administration</h5>
+            <p className="text-sm font-bold capitalize">Al Azhar University</p>
+            <p className='capitalize'>
+              i graduated from faculty of commerce al azhar University ,
+              department of Business Administration with a very good grade
+            </p>
+          </div>
+        </motion.div>
+        {/* Experience */}
+        {/* <motion.div
+          variants={fadeInUp}
+          initial="initial"
+          animate="animate"
+          className="dark:bg-dark-200 p-5"
+        >
+          <h5 className="text-xl font-bold capitalize">experience</h5>
+          <div>
+            <h5 className="text-md font-bold capitalize">BA</h5>
+            <p className="text-sm font-bold capitalize">Al Azhar University</p>
+            <p>
+              i graduated from faculty of commerce al azhar University ,
+              department of BA with a very good grade
+            </p>
+          </div>
+        </motion.div> */}
       </div>
     </motion.div>
   );

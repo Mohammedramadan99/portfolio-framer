@@ -9,12 +9,21 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <>
-      <motion.div variants={routerAnimation} initial="initial" animate="animate" exit='exit' className="flex flex-col flex-grow pt-1 rounded-2xl dark:text-white dark:bg-gradient-to-t dark:bg-dark-100 overflow-hidden">
+      <motion.div
+        variants={routerAnimation}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        className="flex flex-col flex-grow pt-1 rounded-2xl dark:text-white dark:bg-gradient-to-t dark:bg-dark-100 overflow-hidden"
+      >
         <h5 className="p-4 drop-shadow">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem, sunt laudantium. Beatae animi eveniet blanditiis
-          perspiciatis totam quasi numquam veniam necessitatibus excepturi ut
-          quod eligendi, similique enim iure vel fugiat.{" "}
+          Frontend developer with 1 year of experience in building responsive
+          websites and web applications with HTML, CSS, SASS,
+          Bootstrap,tailwind, JavaScript, ES6, and TypeScripst, react, RESTful
+          API. also i can use Node.js, Express, and MongoDB. I have a love of
+          learning the latest technologies and being aware of the technological
+          trends. Passionate and loving to learn and develop, I aspire to gain
+          experiences and skills.
         </h5>
         <div className="p-4 bg-slate-200 dark:bg-transparent flex-grow">
           <h6 className="text-lg my-3 font-bold capitalize">what i offer</h6>

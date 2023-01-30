@@ -17,7 +17,7 @@ export interface Skill {
 export interface Project {
   id: number;
   name: string;
-  description: string;
+  description: string[];
   image_path: string;
   deployed_url: string;
   github_url: string;
@@ -25,4 +25,4 @@ export interface Project {
   key_techs: string[];
 }
 
-export type Category = "react" | "node" | "express" | "django" | "mongo";
+export type Category = "Next.js";
