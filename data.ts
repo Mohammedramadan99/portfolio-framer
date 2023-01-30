@@ -144,7 +144,7 @@ export const projects: Project[] = [
       "we have secure payment and wonderful dashboard for Admin that show you how your store is performing in the previous month , the Latest Transactions and more",
       "i used free plan of mongodb plus free plan of vercel so the app will not be in its normal speed",
     ],
-    image_path: "/images/ecommerce.png",
+    image_path: "/images/Ecommerce.png",
     deployed_url: "https://moz-ecommerce-30w4ikh7q-mohammedramadan99.vercel.app/",
     github_url: "https://github.com/Mohammedramadan99/mozEcommerce",
     category: ["Next.js"],
